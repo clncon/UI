@@ -1,0 +1,13 @@
+ 1.<!-- 用于指定 页面的编码方式，当浏览器解析页面出现乱码时，注意加上这个属性-->
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   
+      
+         2.function loadprogress(){
+             $("#progressId").progressbar({
+            			 
+            //这里不要加分号
+            value:i++
+           })
+           
+           
+3.对于回应的json数据，需要转换成json对象，转换方法使用eval

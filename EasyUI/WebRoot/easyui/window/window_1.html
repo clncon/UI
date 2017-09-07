@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- 用于指定 页面的编码方式，当浏览器解析页面出现乱码时，注意加上这个属性-->
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>JQuery的菜单按钮</title>
+	  
+       <!-- jquery的主文件 -->
+       <script type="text/javascript" src="../../js/jquery.min.js"></script>
+       <!-- jquery easyui的主文件-->
+        <script type="text/javascript" src="../../js/jquery.easyui.min.js"></script>
+        <!-- jquery的主样式文件 -->
+        <style type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"></style>
+        
+        <!-- jquery的主样式文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"/>
+        
+        <!-- jquery的图标文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/icon.css"/>
+         
+       <script type="text/javascript">
+           $(function(){
+        	   
+        	   $("#btn").click(function(){
+        		   
+        		   $("#window").window({
+        			   
+        			   
+        			   title:"搜索",
+        			   height:300,
+        			   width:200,
+        			   
+        		   })
+        		   
+        	   })
+        	   
+        	   $("#btn_1").click(function(){
+        		   
+        		   
+        		   $.messager.confirm('确认','您确认想退出系统吗?',function(r){
+        			   
+        			   
+        			   if(r){
+        				   alert("确认删除");
+        			   }
+        		   })
+        		   
+        		   
+        		   
+        	   });
+        	   
+        	   $.messager.show({
+   		    	
+   		    	title:'我的消息',
+   		    	msg:'消息将在5s后关闭',
+   		    	timeout:5000,
+   		    	width:350,
+   		    	height:200,
+   		    	showType:'slide'
+   		    	
+   		    });
+           })
+       
+        
+       
+       </script>
+       
+  </head>
+     
+     
+  <body>
+      <!--把按钮渲染在这个a标签上面。。。-->
+      <a id="btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'">搜索</a>
+      <div id="window">
+         <div style="float:right">
+            <a id="btn_1" href="#" class="easyui-linkbutton" data-option="iconCls:'icon-cancel'">退出系统</a>
+         </div>
+      </div>
+    
+  </body>
+  
+      
+</html>

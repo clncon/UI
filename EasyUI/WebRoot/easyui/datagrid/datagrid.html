@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>datagrid组件使用</title>
+	
+      <!-- jquery的主文件 -->
+       <script type="text/javascript" src="../../js/jquery.min.js"></script>
+       <!-- jquery easyui的主文件-->
+        <script type="text/javascript" src="../../js/jquery.easyui.min.js"></script>
+        <!-- jquery的主样式文件 -->
+        <style type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"></style>
+        
+        <!-- jquery的主样式文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/bootstrap/easyui.css"/>
+        
+        <!-- jquery的图标文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/icon.css"/>
+        <!-- 区域设置的js文件 -->
+        <script type="text/javascript" src="../../js/locale/easyui-lang-zh_CN.js"></script>
+         <script type="text/javascript">
+             $(function(){
+            	 
+            	 $("#datagrid").datagrid({
+            		
+            		 columns:[[
+            		     
+            			 {title:"车次",width:100,field:"ceci",checkbox:true},
+            			 {title:"出发站<br/>终点站",width:100,field:'startstate'},
+            			 {title:"出发时间<br/>到达时间",width:100,field:'starttime'},
+            			 {title:"历时",width:100,field:'totaltime'},
+            			 {title:"商务座",width:100,field:"swz"},
+            			 {title:"备注",width:100,field:"bz"},
+            			 
+            		 ]
+            	
+            	 ],
+            		 
+            		  //让每列自适应页面的宽度
+            		   fitColumns:true,
+            		   checkOnSelect:false,
+            		   url:"datagrid.json",
+            		   method:"POST",
+            		   toolbar: 
+            			    [{
+            			       text:"修改",
+            				   iconCls: 'icon-edit',
+            				   handler: function(){
+            					   
+            					     alert('编辑按钮')
+            					     
+            					   }
+            			    },'-',{
+            			    text:"帮助",
+            				iconCls: 'icon-help',
+            				handler: function(){
+            					
+            					 alert('帮助按钮')
+            					 
+            					 }
+            			}],
+
+            		    
+            		   //在页面加载成功后执行的事件
+            		    onLoadSuccess:function(){
+            		    	
+	                      $("#btn").linkbutton({
+             		    		
+            		    		iconCls:"icon-add"
+            		    	})
+            		    	
+            		    },
+            		    
+            		     //数据正在加载时显示的提示
+            		    loadMsg:"数据正在加载中....",
+            		    //显示分页
+            		   pagination:true,
+            		   //指定只能单选
+            		    //singleSelect:true,
+            		    
+            		   //显示行号
+            		   rownumbers:true,
+            		   
+            		   //显示斑马线的效果
+            		   striped:true
+                       
+            		 
+            	 })
+            	 
+             })
+         
+         </script>
+  </head>
+  
+  <body>
+     <table id="datagrid" style="width:100%"></table>
+  </body>
+</html>

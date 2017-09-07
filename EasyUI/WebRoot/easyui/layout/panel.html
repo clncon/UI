@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>面板布局</title>
+     <meta name="content-type" content="text/html; charset=UTF-8">
+	<!-- jquery的主文件 -->
+       <script type="text/javascript" src="../../js/jquery.min.js"></script>
+       <!-- jquery easyui的主文件-->
+        <script type="text/javascript" src="../../js/jquery.easyui.min.js"></script>
+        <!-- jquery的主样式文件 -->
+        <style type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"></style>
+        
+        <!-- jquery的主样式文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/bootstrap/easyui.css"/>
+        
+        <!-- jquery的图标文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/icon.css"/>
+        <!-- 区域设置的js文件 -->
+        <script type="text/javascript" src="../../js/locale/easyui-lang-zh_CN.js"></script>
+        <script type="text/javascript">
+        
+        
+           $(function(){
+        	   
+        	    $("#ccc").resizable({
+        	    	maxWidth:250,
+        	    	maxHeight:300
+        	    	
+        	    });
+        	   
+        	   
+           })
+        </script>
+        
+        <style type="text/css">
+           #ccc{
+            
+			
+			border:3px solid red;
+			height:100px;
+			width:200px;
+			background:#999999;
+		
+              
+           }
+        
+        </style>
+  </head>
+  
+  <body>
+      <div id="panel-easyui" class="easyui-panel" title="My panel"
+       style="width:500px;height:150px;padding:10px;background:#fafafafa;"
+       data-options="iconCls:'icon-save',closable:true,
+                     collapsible:true,minimizable:true,maximizable:true"
+       >
+          <div id="ccc">panel content</div>
+          <p>panel content</p>
+       </div>
+  </body>
+</html>

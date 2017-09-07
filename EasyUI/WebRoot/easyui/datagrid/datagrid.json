@@ -1,0 +1,92 @@
+{
+  "total":1000,
+   "rows":[
+   
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"<a id='btn' href='#' class='easyui-linkbutton' >预定</a>"
+          },
+          
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+          
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+          
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          },
+         {
+	         "ceci":"G118",
+	         "startstate":"苏州<br/>合肥",
+	         "starttime":"16点05分<br/>18点51分",
+	          "totaltime":"两个半小时",
+	          "swz":"有",
+	          "bz":"预定"
+          }
+   
+     ]
+   
+
+}

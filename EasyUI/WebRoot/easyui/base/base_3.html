@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- 用于指定 页面的编码方式，当浏览器解析页面出现乱码时，注意加上这个属性-->
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>JQuery的菜单按钮</title>
+	  
+       <!-- jquery的主文件 -->
+       <script type="text/javascript" src="../../js/jquery.min.js"></script>
+       <!-- jquery easyui的主文件-->
+        <script type="text/javascript" src="../../js/jquery.easyui.min.js"></script>
+        <!-- jquery的主样式文件 -->
+        <style type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"></style>
+        
+        <!-- jquery的主样式文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"/>
+        
+        <!-- jquery的图标文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/icon.css"/>
+         
+       <script type="text/javascript">
+         
+        $(function(){
+        	
+        	
+        	window.onmouseup=function(event){
+        		
+        		//当鼠标右击时才有响应
+        		
+        			
+        		    var x = event.clientX;
+        		    var y = event.clientY;
+        		    
+        		   $("#menu_1").menu({
+        			   
+        			   left:x+"px",
+        			   top:y+"px"
+        		   }).show()
+        		}
+        	
+        })
+      
+     </script>
+  </head>
+     
+     
+  <body>
+  
+    <div id="menu_1" style="width:150px" class="easyui-menu">
+          <div>新建文件夹</div>
+          <div class="menu-seq"></div>
+          <div>创建快捷方式</div>
+          <div class="menu-seq"></div>
+          <div>打开方式
+              <div style="width:150px">
+                 <div>使用快播打开</div>
+                 <div>使用爱奇艺打开</div>
+                 <div>使用其他方式打开</div>
+              </div>
+              </div>
+          <div>复制</div>
+          <div class="menu-seq"></div>
+          <div data-options="iconCls:'icon-cancel'">删除</div>
+          <div class="menu-seq"></div>
+          <div >黏贴</div>
+          <div class="menu-seq"></div>
+          <div>属性</div>
+      </div>
+    
+    
+  </body>
+  
+      
+</html>

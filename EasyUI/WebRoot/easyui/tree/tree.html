@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <title>tree结构</title>
+    <!-- jquery的主文件 -->
+       <script type="text/javascript" src="../../js/jquery.min.js"></script>
+       <!-- jquery easyui的主文件-->
+        <script type="text/javascript" src="../../js/jquery.easyui.min.js"></script>
+        <!-- jquery的主样式文件 -->
+        <style type="text/css" rel="stylesheet" href="../../js/themes/default/easyui.css"></style>
+        
+        <!-- jquery的主样式文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/bootstrap/easyui.css"/>
+        
+        <!-- jquery的图标文件 -->
+        <link  type="text/css" rel="stylesheet" href="../../js/themes/icon.css"/>
+        <!-- 区域设置的js文件 -->
+        <script type="text/javascript" src="../../js/locale/easyui-lang-zh_CN.js"></script>
+        
+        <script type="text/javascript">
+           $(function(){
+        	   
+        	   $("#easyUITree").tree({
+        		   
+        		   url:"treedata.json",
+        		   animate:true,
+        		   checkbox:true,
+        		   lines:true,
+        		   onClick:function(node){
+        			   
+        			   //alert(node.text);
+        			   
+        			  //var children = $("#easyUITree").tree("getChildren",node);
+        			  //alert(children.length);
+        			  
+        			  var children = node.children;
+        			  alert(children.length);
+        		   }
+        		   
+        	   })
+        	   
+           })
+        
+        </script>
+  </head>
+  
+  <body>
+        <ul id="easyUITree"></ul>
+  </body>
+</html>
